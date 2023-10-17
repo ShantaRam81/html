@@ -9,21 +9,46 @@
   
   header {
     display: flex;
-    justify-content: space-between;
     align-items:center;
-    padding: 30px 10%;
+    padding: 10px 10%;
     background-color: #ffffff;
   }
-  
+
+  nav{
+    max-width: 1200px;
+    margin: auto;
+    padding: 2rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
   .logo {
     cursor: pointer;
+    max-width: 100px;
   }
+
   header {
     box-shadow: 5px 5px 5px rgb(233, 233, 233);
+    
 
   }
   
-  .nav__links a,
+  .btn{
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #1d4ed8;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn:hover{
+    background-color: #1e40af;
+}
+  .nav-links a,
   .overlay__content a {
     font-family: 'Manrope', sans-serif;
     font-weight: 900;
@@ -38,31 +63,23 @@
     color: #FFFFFF;
     text-decoration: none;
   }
-  .nav__links {
+  .nav-links {
     list-style: none;
-    display:flex;
-    position:fixed;
-    margin-top: -14px;
-    cursor: pointer;
-    position: relative;
-    left: 50%;
-    transform: translate(-50%, 0);
-  }
-  .centered-nav {
     display: flex;
-    justify-content: center;
     align-items: center;
+    gap: 3rem;
+    
   }
-  
-  .nav__links li {
+
+  .nav-links li {
     padding: 0px 30px;
   }
   
-  .nav__links li a {
+  .nav-links li a {
     transition: color 0.3s ease 0s;
   }
   
-  .nav__links li a:hover {
+  .nav-links li a:hover {
     color: #387CFF;
   }
   .login {
